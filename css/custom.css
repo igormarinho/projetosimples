@@ -1,0 +1,126 @@
+html{
+    font-family: Arial;
+    font-size: 0.8em;
+
+
+}
+.ng-view{
+    height: 80%;
+}
+.ng-view::-webkit-scrollbar{
+    width: 7%;
+}
+.ng-view{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/*Logo*/
+.logo{
+    width: 114px;
+}
+.brand-logo{
+
+    margin-top: 5px;
+}
+
+
+/*over do menu*/
+.side-nav{
+    overflow: hidden;
+}
+.side-nav:hover{
+    overflow: auto;
+}
+.side-nav::-webkit-scrollbar {
+    width: 7px;
+    background-color: #eee;
+}
+
+.side-nav::-webkit-scrollbar-thumb {
+    background:#aaa;
+    border-radius: 4px;
+
+}
+
+/*Configuração de titulo e pargrafo*/
+
+h1{
+    text-align: center;
+}
+p{
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+}
+
+
+/*Icones etexto, fullscreen*/
+.tt{
+
+    margin-right: 2%;
+
+}
+
+.maxi{
+    margin-right: 2%;
+}
+.mini{
+
+    margin-right:2%;
+}
+
+/*video*/
+
+.responsive-video{
+   align-content: center;
+}
+
+/*Overlow*/
+.ng-view::-webkit-scrollbar {
+    width: 7px;
+    background-color: lightgrey;
+}
+
+.ng-view::-webkit-scrollbar-thumb {
+    background:darkgrey;
+    border-radius: 4px;
+
+}
+
+/*quando estiver em fullscreen*/
+:-webkit-full-screen .ng-view {
+
+}
+
+
+@media print {
+}
+@media only screen and (max-width: 480px) {
+
+
+
+}
+@media only screen and (min-width: 568px) {
+
+
+}
+@media only screen and (min-width: 768px) {
+
+
+
+}
+@media only screen and (min-width: 992px) {
+
+
+
+}
+@media only screen and (min-width: 1382px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5)
+{
+}

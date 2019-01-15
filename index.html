@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="app" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+
+    <script data-require="angular-route@*" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+<ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+        <div class="background">
+            <img src="img/backgroundMenu.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="icons/perfil.jpg"></a>
+        <a href="#!name"><span class="white-text name">Ana Maria</span></a>
+        <a href="#!email"><span class="white-text email">anamariabraga@gmail.com</span></a>
+    </div></li>
+            <li><a href="#/inicial">Bem Vindo</a></li>
+            <li><a href="#/pagina1">Início</a></li>
+            <li><a href="#/pagina2">Desafio</a></li>
+            <li><a href="#/pagina3">Etapas</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="#!">Unidade 2</a></li>
+            <li><a href="#/pagina4">Isso</a></li>
+            <li><a href="#/pagina5">Aquilo</a></li>
+            <li><a href="#!">Este Também</a></li>
+            <li><a  href="#!">Novamente</a></li>
+            <li><div class="divider"></div></li>
+
+
+</ul>
+
+
+<nav>
+    <a class="nav-wrapper">
+
+        <a href="" class="brand-logo center  " >Logo</a><a href="">
+        <i class="material-icons right mini  hide-on-small-and-down" onclick="closeFullscreen();">fullscreen_exit</i></a>
+        <a href="" ><i class="material-icons right maxi hide-on-small-and-down" onclick="openFullscreen();">fullscreen</i>
+        </a><a href=""> <i class="material-icons right tt hide-on-small-and-down">format_size</i></a>
+        <ul id="nav-mobile" class="left ">
+
+            <li><href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></nav></li>
+
+        </ul>
+    </div>
+</nav
+
+
+<br>
+
+
+
+    <div class="ng-view" ></div>
+
+
+
+<ul class="pagination center">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+
+
+</body>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(".button-collapse").sideNav();
+</script>
+
+
+
+
+
+
+
+
+
+<!-- script do menu lateral, -->
+<script>
+    $('.button-collapse').sideNav({
+        menuWidth: 300, // tamanho
+        edge: 'left', // origem do menu
+        closeOnClick: true , // fechar ao clickar em algum link
+
+
+    }
+  );
+</script>
+
+
+
+<!-- fullscreen -->
+<script>
+    var elem = document.documentElement;
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+</script>
+
+<!-- sonfona -->
+<script>
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+});
+</script>
+
+
+</body>
+</html>
