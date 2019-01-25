@@ -48,8 +48,10 @@ html{
 
 h1{
     text-align: center;
+    margin-top: 5%;
 }
 p{
+    margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
     text-align: justify;
@@ -69,6 +71,9 @@ p{
 .mini{
 
     margin-right:2%;
+}
+.navbar-fixed{
+    position: fixed;
 }
 
 /*video*/

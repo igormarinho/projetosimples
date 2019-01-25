@@ -12,9 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-    <script data-require="angular.js@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <script data-require="angular-route@*" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <script data-require="angular-route@*" data-semver="1.4.3" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script src="js/app.js"></script>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
@@ -41,46 +45,37 @@
             <li><a  href="#!">Novamente</a></li>
             <li><div class="divider"></div></li>
 
-
 </ul>
 
 
-<nav>
-    <a class="nav-wrapper">
 
-        <a href="" class="brand-logo center  " >Logos</a><a href="">
-        <i class="material-icons right mini  hide-on-small-and-down" onclick="closeFullscreen();">fullscreen_exit</i></a>
-        <a href="" ><i class="material-icons right maxi hide-on-small-and-down" onclick="openFullscreen();">fullscreen</i>
-        </a><a href=""> <i class="material-icons right tt hide-on-small-and-down">format_size</i></a>
-        <ul id="nav-mobile" class="left ">
+        <nav class="navbar-fixed">
+            <a class="nav-wrapper">
 
-            <li><href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></nav></li>
+                <a href="" class="brand-logo center">Logos</a><a href="">
+                <i class="material-icons right mini  hide-on-small-and-down" onclick="closeFullscreen();">fullscreen_exit</i></a>
+                <a href="" ><i class="material-icons right maxi hide-on-small-and-down" onclick="openFullscreen();">fullscreen</i></a>
+                </a><a href=""> <i class="material-icons right tt hide-on-small-and-down">format_size</i></a>
+                <ul id="nav-mobile" class="left ">
+                </ul>
 
-        </ul>
-    </div>
-</nav
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
 
+        </nav>
 
 <br>
 
 
 
-    <div class="ng-view" ></div>
-
-
-
-<ul class="pagination center">
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-    <li class="active"><a href="#!">1</a></li>
-    <li class="waves-effect"><a href="#!">2</a></li>
-    <li class="waves-effect"><a href="#!">3</a></li>
-    <li class="waves-effect"><a href="#!">4</a></li>
-    <li class="waves-effect"><a href="#!">5</a></li>
-    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-</ul>
-
+    <div class="ng-view"></div>
+    <div class="pagination center">
+        <a href="#" class="prev"><i class="material-icons">chevron_left</i></a>
+        <a href="#" class="next"><i class="material-icons">chevron_right</i></a>
+    </div>
+    
 
 </body>
+
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
